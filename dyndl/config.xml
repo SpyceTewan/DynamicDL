@@ -1,0 +1,6 @@
+<cfg>
+	<title>DynamicDL</title>
+	<root>download</root>
+	<bytefactor>2</bytefactor>
+	<decimal_points>2</decimal_points>
+</cfg>
