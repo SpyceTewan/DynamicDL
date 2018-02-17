@@ -15,7 +15,8 @@ Paste all of your files into the 'download' directory. (Directory can be changed
 **title**  
   *Default:* DynamicDL  
   The headline of your page.  
-  
+  Will appear in the HTML <title> and as the headline of the site.  
+ 
 **root**  
   *Default:* download  
   The root directory of your downloadables.  
@@ -38,9 +39,11 @@ Paste all of your files into the 'download' directory. (Directory can be changed
 Wasn't that complicated, was it?
 
 # Changelog:
-### DynamicDL 1.0
+### v1.0
 *First release*
-### DynamicDL 1.1
+### v1.1
 *Changed config.xml arguments*
-### DynamicDL 1.1 Patch 01
-*Fixed major bugs regarding folder structures*
+### v1.1 Patch 01
+*Fixed major bugs that broke folder structures*
+### v1.1 Patch 02
+*Fixed bug that didn't add the path of the subdirectory into the download URL*
