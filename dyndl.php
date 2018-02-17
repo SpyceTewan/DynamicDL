@@ -13,14 +13,22 @@
 			);
 
 
-			//Getting the path per GET request
-			if(!empty($_GET['path'])){
-				$path = $_GET['path'];
+			if(!empty($_GET['path'])){	// Checking if ?path= is given in url
+				$path = $_GET['path'];	// Getting the path per url get request
+
+				//Fixing XSS
+				$path = str_replace('<', '&#60;', $path);
+				$path = str_replace('>', '&#62;', $path);
+
+				//Fixing security exploit that leads to the whole file system being browsable
+				$path = str_replace('../', '/', $path);
+
 				$c = $_GET['c'];
-			}else {
+			}else {	// Setting path to root directory if not given
 				$path = "/";
 				$c = "";
 			}
+
 
 			// Load the config.xml file
 			$cfg = simplexml_load_file('dyndl/config.xml');
@@ -48,7 +56,7 @@
 </head>
 <body>
 	<h1><?php echo $title; ?></h1>
-	<p><?php echo $path ?></p>
+	<p>Current directory: <?php echo $path; ?></p>
 	<table class="table-directory">
 		<tr>
 			<th>Directory</th>
@@ -56,6 +64,7 @@
 
 			<?php
 
+				// Going to last directory
 				$parent = str_replace($c, '', $path);
 				include 'dyndl/parent_dir.php';
 
