@@ -47,3 +47,6 @@ Wasn't that complicated, was it?
 *Fixed major bugs that broke folder structures*
 ### v1.1 Patch 02
 *Fixed bug that didn't add the path of the subdirectory into the download URL*
+### v1.1 Security Patch 01
+*Fixed XSS*
+*Fixed entire file system beyond the download directory being exploreable because of ../*
