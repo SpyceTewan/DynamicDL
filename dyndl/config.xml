@@ -1,0 +1,8 @@
+<cfg>
+	<title>Example</title>
+	<root>download</root>
+	<bytefactor>2</bytefactor>
+	<decimal_points>2</decimal_points>
+
+	<uploadable>false</uploadable>
+</cfg>

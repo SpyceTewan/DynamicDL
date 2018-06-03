@@ -1,0 +1,200 @@
+@import url('http://cdn.tewan.at/OpenSans-Regular.ttf');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Open Sans", sans-serif;
+	outline: none;
+	font-weight: normal;
+}
+
+.button-primary {
+	background-color: #2879E8;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	transition-duration: 0.25s;
+}
+
+.button-primary:hover {
+	background-color: #0D67E2;
+}
+
+th, td {
+	text-align: left;
+	padding: 10px;
+}
+
+th {
+	border-bottom: #eee solid 2px;
+}
+
+a {
+	color: #5272E9	;
+	text-decoration: none;
+}
+
+.header {
+	background-color: #2879E8;
+	width: 100%;
+	height: 7%;
+	box-shadow: 0px 5px 5px #bbb;
+	overflow-y: hidden;
+}
+
+.header-title {
+	padding-left: 1%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	font-weight: normal;
+	font-size: 25px;
+	width: 15%;
+
+	float: left;
+}
+
+.header-path-container {
+	width: 80%;
+	height: 100%;
+	float: right;
+}
+
+.header-path-element {
+	height: 100%;
+	color: #333;
+	font-size: 150%;
+	float: left;
+	padding-right: 5px;
+}
+
+.header-path-element p {
+	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.sidebar {
+	background-color: #4A4A4F;
+	width: 20%;
+	height: 93%;
+	float: left;
+}
+
+.sidebar-content {
+	height: 95%;
+}
+
+.sidebar-footer {
+	height: 5%;
+	text-align: center;
+}
+
+.sidebar-footer a {
+	color: #222;
+	cursor: pointer;
+}
+
+.explorer {
+	width: 80%;
+	float: left;
+}
+
+.explorer table {
+	width: 100%;
+}
+
+.explorer-name img {
+	height: 25px; 
+	float: left;
+	margin-top: -2.5px;
+}
+
+.explorer-name a {
+	float: left; 
+	margin-left: 4px;
+	color: #333;
+}
+
+.explorer-name {
+	width: 40%;
+}
+
+.explorer-date {
+	color: #333;
+	width: 40%;
+}
+
+.explorer-size {
+	color: #333;
+	width: 20%;
+
+}
+
+.container {
+	background-color: #4A4A4F;
+	width: 30%;
+	height: 35%;
+	position: fixed;
+	top: 30%;
+	left: 35%;
+	box-shadow: 0px 0px 10px grey;
+	overflow: hidden;
+	text-align: right;
+}
+
+.title-dl {
+	font-size: 20px;
+	color: white;
+
+	margin-top: 5%;
+}
+
+.name {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 10%;
+}
+
+.dl {
+	color: white;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+.upload-container {
+	padding-top: 5%;
+	padding-left: 5%;
+	color: white;
+}
+
+.upload-container h3 {
+	margin-bottom: 5px;
+	font-size: 150%;
+}
+
+.upload-input {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.upload-input + label {
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.upload-submit {
+	cursor: pointer;
+	margin-top: 5px;
+	font-size: 15px;
+}
